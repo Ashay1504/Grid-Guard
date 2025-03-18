@@ -1,30 +1,73 @@
-Grid-Guard is an innovative energy emissions dashboard designed to monitor energy consumption, sensor data, and environmental factors in real-time. It integrates sensor data from various devices such as current sensors (ACS712), CO sensors (MQ-7), and CO2 sensors (MH-Z19) to provide actionable insights for optimizing energy usage and reducing environmental impact. The system uses machine learning (SVR models) to predict future data, and allows for automated control actions like activating ventilation, reducing load, and optimizing HVAC.
+# Grid-Guard: Energy Emissions Dashboard
 
-Features
-Real-Time Monitoring: Visualize current, CO, and CO2 levels over time using interactive graphs.
-Predictive Analytics: Uses SVR (Support Vector Regression) models to predict future sensor data.
-Control Actions: Choose from multiple actions such as activating ventilation, reducing load, or optimizing HVAC systems to ensure safe and efficient operations.
-Warnings & Recommendations: Get real-time warnings if sensor data exceeds specified thresholds, along with actionable recommendations for better energy management.
-Custom CSV Upload: Upload your own CSV files to generate graphs and predictions based on custom data.
-Report Generation: Generate and download a report of the latest sensor readings, predictions, and control actions.
-Technologies Used
-Streamlit: Web framework for creating interactive dashboards.
-Plotly: For visualizing sensor data and predictions in an interactive graph format.
-Pandas: Data manipulation and analysis.
-Numpy: For generating synthetic sensor data and noise.
-Scikit-learn (SVR): For predicting sensor data using machine learning models.
+Grid-Guard is an innovative real-time energy emissions dashboard designed to monitor energy consumption, sensor data, and environmental factors. By integrating data from various sensors, such as current sensors (ACS712), CO sensors (MQ-7), and CO2 sensors (MH-Z19), Grid-Guard provides actionable insights to optimize energy usage and reduce environmental impact. Additionally, the system leverages machine learning (SVR models) to predict future trends and allows for automated control actions, such as activating ventilation, reducing load, and optimizing HVAC systems.
 
-Usage
-Monitor Sensors: View real-time graphs for current, CO, and CO2 sensor data.
-Predict Future Values: See predictions for current, CO, and CO2 levels based on your sensor data and machine learning models.
-Control Actions: Choose actions like activating ventilation, reducing load, or optimizing HVAC to take real-time control of the system.
-Get Alerts: Receive alerts and recommendations when sensor values exceed safe thresholds.
-Generate Reports: Download CSV reports of the current system status.
-Project Structure
-app.py: Main Streamlit app script that contains the logic for the dashboard.
-steel_combined_sensors_hourly.csv: Example sensor data for monitoring.
-svr_predictions.csv: Example predictions generated from the SVR model.
-requirements.txt: List of Python dependencies for the project.
-README.md: Project documentation.
-Contributing
-If you'd like to contribute to Grid-Guard, feel free to fork this repository, make your changes, and submit a pull request. Contributions in the form of new features, bug fixes, or improvements to the documentation are welcome!
+## Features
+
+### 📈 Real-Time Monitoring
+- Visualize current, CO, and CO2 levels over time using interactive graphs.
+
+### 🧪 Predictive Analytics
+- Uses Support Vector Regression (SVR) models to predict future sensor data and trends.
+
+### ⚙️ Control Actions
+- Choose from multiple automated control actions, such as:
+  - Activating ventilation systems
+  - Reducing energy load
+  - Optimizing HVAC efficiency
+
+### ⚠️ Warnings & Recommendations
+- Receive real-time alerts when sensor data exceeds safe thresholds.
+- Get actionable recommendations for better energy management.
+
+### 🗃️ Custom CSV Upload
+- Upload your own CSV files to generate custom graphs and predictions.
+
+### 🌍 Report Generation
+- Generate and download detailed reports on the latest sensor readings, predictions, and control actions.
+
+## ⚛️ Technologies Used
+
+- **Streamlit**: Web framework for creating interactive dashboards.
+- **Plotly**: Interactive data visualization.
+- **Pandas**: Data manipulation and analysis.
+- **NumPy**: Synthetic sensor data generation and noise handling.
+- **Scikit-learn (SVR)**: Machine learning model for sensor data predictions.
+
+## 💡 Usage Guide
+
+1. **Monitor Sensors**: View real-time graphs displaying current, CO, and CO2 sensor data.
+2. **Predict Future Values**: Utilize machine learning predictions for upcoming energy and environmental trends.
+3. **Take Control Actions**: Activate ventilation, reduce load, or optimize HVAC systems for improved efficiency.
+4. **Get Alerts**: Receive instant notifications when sensor values exceed safe limits.
+5. **Generate Reports**: Download CSV reports summarizing system status and predictions.
+
+## 🛠️ Project Structure
+
+- **`app.py`**: Main Streamlit application script.
+- **`steel_combined_sensors_hourly.csv`**: Sample sensor data for monitoring.
+- **`svr_predictions.csv`**: Example SVR model predictions.
+- **`requirements.txt`**: List of Python dependencies for the project.
+- **`README.md`**: Project documentation.
+
+## 👥 Contributing
+
+We welcome contributions! To contribute:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a pull request.
+
+Contributions in the form of new features, bug fixes, or documentation improvements are highly appreciated!
+
+## 📢 License
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+Feel free to reach out with any questions or suggestions!
+
+Happy coding! 💪
+
+
